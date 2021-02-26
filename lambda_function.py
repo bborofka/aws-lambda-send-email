@@ -49,20 +49,19 @@ def lambda_handler(event, context):
                 'ToAddresses': [
                     recipient,
                 ],
-                'ccAddresses': [
+                'CcAddresses': [
                     cc,
                 ],
             },
             Message={
                 'Body': {
-
                     'Text': {
-                        'charset': charset,
+                        'Charset': charset,
                         'Data': body_text,
                     },
                 },
-                'subject': {
-                    'charset': charset,
+                'Subject': {
+                    'Charset': charset,
                     'Data': subject,
                 },
             },
